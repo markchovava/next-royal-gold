@@ -1,103 +1,173 @@
 import Image from "next/image";
+import MainSlider from "./_components/MainSlider";
+import FadeSlideIn from "./_components/FadeSlideIn";
+import Link from "next/link";
+import CarouselOne from "./_components/CarouselOne";
+import { ProjectData } from "./_data/ProjectData";
+import ContactComp from "./_components/ContactComp";
+
+
 
 export default function Home() {
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+    <>
+    <MainSlider />
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+
+     <FadeSlideIn slideDirection="up" duration={1500}>
+      <section id='about' className="w-full pt-[6rem] pb-[6rem]">
+        <div className="mx-auto text-center flex items-center justify-center flex-col w-[65%]">
+          <h3 className="text-[4rem] text-center font-extrabold ">About Us</h3>
+          <hr className="w-[12rem] border-b border-[0.4rem] border-green-700" />
+          <p className="text-[1.8rem] font-light mt-[2rem]">
+            Royal Gold Niger SA is a an established joint venture in Niger, formed through a 
+            partnership between the government of Niger and Suvarna Royal Gold Trading LLC.
+            The formation of Royal Gold Niger is a cornerstone of Niger's new mining policy, 
+            which emphasizes economic sovereignty and maximizing the benefits of its natural resources 
+            for its citizens. 
+          </p>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
-  );
+      </section>
+     </FadeSlideIn>
+
+
+      <FadeSlideIn slideDirection="left" duration={1500}>
+        <section id='why-us' className='w-full grid lg:grid-cols-2 h-[25rem] gap-8 mb-[8rem]'>
+            <div className='pl-[8%] flex flex-col items-start justify-center font-light text-gray-700 text-[1.5rem]'>
+                {/* <h3 className='text-[2.5rem] leading-[2.5rem] mb-4 font-extrabold text__gradient'>
+                    The Vision
+                </h3> */}
+                <p>
+                    This project, formalized as Royal Gold Niger, aims to industrialize artisanal mining, create local jobs, 
+                    boost government revenue, and provide training opportunities. The refinery, jewelry manufacturing, and gemstone 
+                    processing units will be located in Niamey, the capital city. 
+                </p>
+            </div>
+            
+            <div className='lg:h-auto h-[15rem] bg-gray-400 lg:rounded-l-3xl overflow-hidden drop-shadow'>
+                <Image 
+                    src={`/assets/img/7by3/04.jpg`} 
+                    height={500} 
+                    width={1000} 
+                    className="w-full h-full object-cover" 
+                    alt="Background Image" />
+            </div>
+           
+        </section>
+    </FadeSlideIn>
+
+
+    <FadeSlideIn slideDirection="right" duration={1500}>
+            <section className='w-full grid lg:grid-cols-2 h-[25rem] gap-8 mb-[8rem]'>
+    
+                <div className='lg:h-auto h-[15rem] lg:rounded-l-3xl bg-gray-400 rounded-r-3xl overflow-hidden drop-shadow'>
+                    <Image 
+                        src={`/assets/img/7by3/05.jpg`} 
+                        height={500} 
+                        width={1000} 
+                        className="w-full h-full object-cover" 
+                        alt="Background Image" />
+                </div>
+                
+                <div className='lg:pr-[8%] lg:w-full w-[92%] mx-auto lg:mx-0 flex flex-col items-start justify-center font-light text-gray-700 text-[1.5rem]'>
+                   {/*  <h3 className='text-[2.5rem] leading-[2.5rem] mb-4 font-extrabold text__gradient'>
+                        Lorem ipsum dolor sit amet.
+                    </h3> */}
+                    <p>
+                        This is seen as a strategic move for Niger to take more control of its natural resources and boost its economy. 
+                        By processing gold locally, Niger hopes to increase tax revenue, compete with established West African refiners, and 
+                        formalize small-scale gold mining activities. 
+                    </p>
+                </div>
+               
+            </section>
+    </FadeSlideIn>
+
+
+     <FadeSlideIn slideDirection="up" duration={1500}>
+        <section id='service' className="w-full">
+        <div className="mx-auto w-[92%] grid lg:grid-cols-8 grid-cols-1 gap-4 lg:gap-0 overflow-hidden rounded-3xl bg-white text-gray-100 drop-shadow-xl lg:h-[36rem]">
+          
+          {/* Title Section */}
+          <div className="lg:col-span-2 lg:row-span-2 aspect-square lg:aspect-auto p-4 bg-gradient-to-br from-green-400 to-green-950 text-white flex items-center justify-center lg:justify-start rounded-lg lg:rounded-none">
+            <h3 className="font-extrabold text-center lg:text-left leading-tight lg:leading-[5rem] text-3xl text-[4rem] lg:text-[5rem]">What we do?</h3>
+          </div>
+          
+          {/* Gold Refinery */}
+          <div className="lg:col-span-3 aspect-square lg:aspect-auto lg:h-auto w-full relative overflow-hidden group rounded-lg lg:rounded-none">
+            <div className='absolute z-5 w-[100%] h-[100%] bg-sky-600'>
+              <Image 
+                src={`/assets/img/7by3/02.jpg`} 
+                height={500} 
+                width={1000} 
+                className="w-full h-full object-cover ease-in-out duration-300 transition-all group-hover:scale-110" 
+                alt="Gold refinery background" />
+            </div>
+            <div className="absolute bottom-0 left-0 z-6 w-full h-[50%] bg-gradient-to-t from-gray-950 to-transparent"></div>
+            <div className="absolute bottom-0 left-0 z-10 w-full h-full flex items-end justify-start p-4 lg:p-6">
+              <Link href="/service" className="hover:underline transition-all ease-in-out duration-300">
+                <h4 className="text-medium text-lg sm:text-xl lg:text-2xl">A state-of-the-art gold refinery</h4>
+              </Link>
+            </div>
+          </div>
+          
+          {/* Jewelry Manufacturing */}
+          <div className="lg:col-span-3 aspect-square lg:aspect-auto relative overflow-hidden group rounded-lg lg:rounded-none">
+            <div className='absolute z-5 w-[100%] h-[100%] bg-rose-600'>
+              <Image 
+                src={`/assets/img/7by3/07.jpg`} 
+                height={500} 
+                width={1000} 
+                className="w-full h-full object-cover ease-in-out duration-300 transition-all group-hover:scale-110" 
+                alt="Jewelry manufacturing background" />
+            </div>
+            <div className="absolute bottom-0 left-0 z-6 w-full h-[50%] bg-gradient-to-t from-gray-950 to-transparent"></div>
+            <div className="absolute bottom-0 left-0 z-10 w-full h-full flex items-end justify-start p-4 lg:p-6">
+              <Link href="/service" className="hover:underline transition-all ease-in-out duration-300">
+                <h4 className="text-medium text-lg sm:text-xl lg:text-2xl">A jewelry manufacturing unit</h4>
+              </Link>
+            </div>
+          </div>
+          
+          {/* Gemstone Cutting */}
+          <div className="lg:col-span-6 aspect-square lg:aspect-auto relative overflow-hidden group rounded-lg lg:rounded-none">
+            <div className='absolute z-5 w-[100%] h-[100%] bg-fuchsia-600'>
+              <Image 
+                src={`/assets/img/7by3/08.jpg`} 
+                height={500} 
+                width={1000} 
+                className="w-full h-full object-cover ease-in-out duration-300 transition-all group-hover:scale-110" 
+                alt="Gemstone cutting background" />
+            </div>
+            <div className="absolute bottom-0 left-0 z-6 w-full h-[50%] bg-gradient-to-t from-gray-950 to-transparent"></div>
+            <div className="absolute bottom-0 left-0 z-10 w-full h-full flex items-end justify-start p-4 lg:p-6">
+              <Link href="/service" className="hover:underline transition-all ease-in-out duration-300">
+                <h4 className="text-medium text-lg sm:text-xl lg:text-2xl">A gemstone cutting and polishing center</h4>
+              </Link>
+            </div>
+          </div>
+          
+        </div>
+      </section>
+     </FadeSlideIn>
+
+
+     <FadeSlideIn slideDirection="up" duration={1500}>
+      <section className="pt-[8rem] pb-[6rem]">
+        <div className="ml-[4%] w-[92%]">
+          <CarouselOne title="The Benefits" dbData={ProjectData} />
+        </div>
+      </section>
+     </FadeSlideIn>
+
+
+     <FadeSlideIn slideDirection="up" duration={1500}>
+        <section id="contact">
+          <ContactComp />
+        </section>
+      </FadeSlideIn>
+
+
+    </>
+  )
 }
