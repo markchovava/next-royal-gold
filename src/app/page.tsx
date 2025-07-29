@@ -20,7 +20,7 @@ export default function Home() {
           <h3 className="text-[4rem] text-center font-extrabold ">About Us</h3>
           <hr className="w-[12rem] border-b border-[0.4rem] border-green-700" />
           <p className="text-[1.8rem] font-light mt-[2rem]">
-            Royal Gold Niger SA is a an established joint venture in Niger, formed through a 
+            Royal Gold Niger SA is an established joint venture in Niger, formed through a 
             partnership between the government of Niger and Suvarna Royal Gold Trading LLC.
             The formation of Royal Gold Niger is a cornerstone of Niger's new mining policy, 
             which emphasizes economic sovereignty and maximizing the benefits of its natural resources 
