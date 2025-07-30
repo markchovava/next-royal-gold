@@ -9,11 +9,11 @@ export const SlideData = [
     description: "We are Niger's first gold refinery and gemstone processing facilities.",
     button: <ButtonPrimary
               link={`#about`} 
-              text={`About Us`} 
+              text={`Who we are?`} 
               buttonStyle='text-lg text-gray-800 py-4 px-8 bg-gray-50'
               iconStyle='text-transparent text-lg group-hover:text-green-600' />
   },
-  {
+  /* {
     id: 2,
     img: '/assets/img/7by3/02.jpg',
     title: 'Our Services',
@@ -34,5 +34,5 @@ export const SlideData = [
               text={`Contact Us`} 
               buttonStyle='text-lg text-gray-800 py-4 bg-gray-50' 
               iconStyle='text-transparent text-lg group-hover:text-green-600' />
-  },
+  }, */
 ];

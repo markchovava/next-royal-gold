@@ -71,8 +71,8 @@ export default function CarouselOne({ title, dbData }: { title: string, dbData: 
 
     return (
       <div className="carousel-container w-full mx-auto">
-        <div className='mr-[5%] flex justify-between items-center mb-8'>
-          <p className='w-full lg:text-[3rem] text-[2rem] font-extrabold leading-tight bg-gradient-to-r from-green-700 via-sky-600 to-green-900 bg-clip-text text-transparent'>
+        <div className=' flex justify-between items-center mb-8'>
+          <p className='w-full lg:text-[3.5rem] text-[2rem] font-extrabold leading-tight bg-gradient-to-r from-green-700 via-sky-600 to-green-900 bg-clip-text text-transparent'>
             {title}
           </p>
           {/* Top Navigation buttons */}

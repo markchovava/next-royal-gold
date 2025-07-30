@@ -13,7 +13,7 @@ export default function Logo({color1, color2, color3}: LogoColorInterface) {
     <>
     <Link href="/">
     <h3 className='text-[3rem] leading-[2.5rem] font-extrabold'>
-        <span className={color1}>Royals</span>  
+        <span className={color1}>Royal</span>  
         <span className={`${color2} `}>Gold</span>
         <span className={color3}>Niger</span>
     </h3>

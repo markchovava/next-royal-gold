@@ -21,7 +21,7 @@ export default function ContactComp() {
 
         <div className='absolute z-20 top-0 left-0 w-full h-full '>
             <div className='w-full h-full flex items-center justify-center flex-col gap-4 text-white'>
-                <h2 className='text-[3rem] font-extrabold text-gray-200'>Talk to us</h2>
+                <h2 className='text-[3rem] font-extrabold text-white'>Talk to us</h2>
                 <ButtonPrimary 
                   link={`#contact`} 
                   text={`Contact Us`} 

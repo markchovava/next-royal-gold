@@ -1,7 +1,7 @@
 export const NavLinksData = [
   { name: 'Home', href: '/' },
-  { name: 'About Us', href: '#about' },
+  { name: 'Who we are?', href: '#about' },
   { name: 'Why Us?', href: '#why-us' },
-  { name: 'Our Services', href: '#service' },
+  { name: 'What we do?', href: '#service' },
   { name: 'Contact Us', href: '#contact' },
 ];
