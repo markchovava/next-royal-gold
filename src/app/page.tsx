@@ -50,7 +50,7 @@ export default function Home() {
             
             <div className='lg:h-auto h-[15rem] bg-gray-400 lg:rounded-l-3xl overflow-hidden drop-shadow'>
                 <Image 
-                    src={`/assets/img/7by3/04.jpg`} 
+                    src={`/assets/img/7by3/01.jpg`} 
                     height={500} 
                     width={1000} 
                     className="w-full h-full object-cover" 
@@ -60,12 +60,11 @@ export default function Home() {
         </section>
     </FadeSlideIn>
 
-
     <FadeSlideIn slideDirection="right" duration={1500}>
         <section className='w-full grid lg:grid-cols-2 h-[25rem] gap-8 mb-[8rem]'>
             <div className='lg:h-auto h-[15rem] lg:rounded-l-3xl bg-gray-400 rounded-r-3xl overflow-hidden drop-shadow'>
                 <Image 
-                    src={`/assets/img/7by3/05.jpg`} 
+                    src={`/assets/img/7by3/02.jpg`} 
                     height={500} 
                     width={1000} 
                     className="w-full h-full object-cover" 
@@ -98,7 +97,7 @@ export default function Home() {
             
             <div className='lg:h-auto h-[15rem] bg-gray-400 lg:rounded-l-3xl overflow-hidden drop-shadow'>
                 <Image 
-                    src={`/assets/img/7by3/06.jpg`} 
+                    src={`/assets/img/7by3/03.jpg`} 
                     height={500} 
                     width={1000} 
                     className="w-full h-full object-cover" 
@@ -122,7 +121,7 @@ export default function Home() {
           <div className="lg:col-span-3 aspect-square lg:aspect-auto lg:h-auto w-full relative overflow-hidden group rounded-lg lg:rounded-none">
             <div className='absolute z-5 w-[100%] h-[100%] bg-sky-600'>
               <Image 
-                src={`/assets/img/7by3/01.jpg`} 
+                src={`/assets/img/7by3/06.jpg`} 
                 height={500} 
                 width={1000} 
                 className="w-full h-full object-cover ease-in-out duration-300 transition-all group-hover:scale-110" 
@@ -142,7 +141,7 @@ export default function Home() {
           <div className="lg:col-span-3 aspect-square lg:aspect-auto relative overflow-hidden group rounded-lg lg:rounded-none">
             <div className='absolute z-5 w-[100%] h-[100%] bg-rose-600'>
               <Image 
-                src={`/assets/img/7by3/02.jpg`} 
+                src={`/assets/img/7by3/14.jpg`} 
                 height={500} 
                 width={1000} 
                 className="w-full h-full object-cover ease-in-out duration-300 transition-all group-hover:scale-110" 
@@ -160,7 +159,7 @@ export default function Home() {
           <div className="lg:col-span-3 aspect-square lg:aspect-auto relative overflow-hidden group rounded-lg lg:rounded-none">
             <div className='absolute z-5 w-[100%] h-[100%] bg-fuchsia-600'>
               <Image 
-                src={`/assets/img/7by3/08.jpg`} 
+                src={`/assets/img/7by3/01.jpg`} 
                 height={500} 
                 width={1000} 
                 className="w-full h-full object-cover ease-in-out duration-300 transition-all group-hover:scale-110" 

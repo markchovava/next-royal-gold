@@ -10,7 +10,7 @@ export default function ContactComp() {
     <section className='w-[92%] h-[28rem] relative mb-[8rem] mx-auto rounded-3xl overflow-hidden'>
         <div className='absolute z-5 top-0 left-0 w-full h-full bg-gradient-to-t from-sky-700 to-blue-900'>
             <Image
-                src={`/assets/img/7by3/06.jpg`} 
+                src={`/assets/img/7by3/04.jpg`} 
                 height={500} 
                 width={1000} 
                 className="w-full h-full object-cover" 
