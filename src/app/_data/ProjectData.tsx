@@ -12,7 +12,7 @@ export const ProjectData: ProjectInterface[] = [
         desc: `By refining gold and processing gemstones locally, Niger aims to capture a greater 
                 share of the value chain, leading to higher export prices and the growth of related 
                 industries.`,
-        img4by5: '/assets/img/4by5/08.jpg'
+        img4by5: '/assets/img/4by5/17.jpg'
     },
     {
         id: 2, 
@@ -20,14 +20,14 @@ export const ProjectData: ProjectInterface[] = [
         desc: `The project is expected to generate numerous direct and indirect jobs, particularly 
                 in skilled labor and artisanal processing, contributing to vocational training and private 
                 sector growth.`,
-        img4by5: '/assets/img/4by5/09.jpg'
+        img4by5: '/assets/img/4by5/18.jpg'
     },
     {
         id: 3, 
         name: 'Industrial Capacity Building', 
         desc: `It represents a strategic step towards developing Niger's industrial capabilities and transforming 
         it from an extractive economy to a value-driven one.`,
-        img4by5: '/assets/img/4by5/10.jpg'
+        img4by5: '/assets/img/4by5/13.jpg'
     },
     {
         id: 4, 

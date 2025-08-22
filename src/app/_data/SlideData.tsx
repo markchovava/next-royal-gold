@@ -19,7 +19,7 @@ export const SlideData = [
     title: 'What we do?',
     description: `Gold buying, refinery, value addition and a welcome center.`,
     button: <ButtonPrimary 
-              link={`#service`} 
+              link={`#what-we-do`} 
               text={`View More`} 
               buttonStyle='text-lg text-gray-800 py-4 bg-gray-50' 
               iconStyle='text-transparent text-lg group-hover:text-amber-600' />
