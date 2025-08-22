@@ -61,7 +61,7 @@ export default function MainSlider() {
   }
 
   return (
-    <div className="relative w-full lg:h-[600px] h-[460px] overflow-hidden">
+    <div className="relative w-full h-full overflow-hidden">
       <Swiper
         modules={[Navigation, Pagination, Autoplay]}
         spaceBetween={0}
@@ -106,7 +106,7 @@ export default function MainSlider() {
           <SwiperSlide key={key} className="relative w-full h-full">
             
           
-            <div className="absolute z-10 w-full h-full bg-green-700 to-transparent"> 
+            <div className="absolute z-10 w-full h-full bg-black to-transparent"> 
             <Image 
               src={slide.img} 
               width={1400} 
@@ -114,7 +114,7 @@ export default function MainSlider() {
               className='w-full h-full object-cover' 
               alt='Image' />
             </div>
-            <div className="absolute z-15 w-full h-full bg-gradient-to-br from-green-950 to-transparent opacity-50" /> 
+            <div className="absolute z-15 w-full h-full bg-gradient-to-br from-black to-transparent opacity-50" /> 
             
             {/* Text Content */}
             <AnimatePresence mode="wait">

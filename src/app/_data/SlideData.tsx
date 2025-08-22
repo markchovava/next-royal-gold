@@ -11,7 +11,7 @@ export const SlideData = [
               link={`#about`} 
               text={`Who we are?`} 
               buttonStyle='text-lg text-gray-800 py-4 px-8 bg-gray-50'
-              iconStyle='text-transparent text-lg group-hover:text-green-600' />
+              iconStyle='text-transparent text-lg group-hover:text-amber-600' />
   },
   {
     id: 2,
@@ -22,7 +22,7 @@ export const SlideData = [
               link={`#service`} 
               text={`View More`} 
               buttonStyle='text-lg text-gray-800 py-4 bg-gray-50' 
-              iconStyle='text-transparent text-lg group-hover:text-green-600' />
+              iconStyle='text-transparent text-lg group-hover:text-amber-600' />
   },
   {
     id: 2,
@@ -33,6 +33,6 @@ export const SlideData = [
               link={`#contact`} 
               text={`Contact Us`} 
               buttonStyle='text-lg text-gray-800 py-4 bg-gray-50' 
-              iconStyle='text-transparent text-lg group-hover:text-green-600' />
+              iconStyle='text-transparent text-lg group-hover:text-amber-600' />
   }, 
 ];

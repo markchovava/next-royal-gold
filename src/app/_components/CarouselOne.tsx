@@ -71,8 +71,8 @@ export default function CarouselOne({ title, dbData }: { title: string, dbData: 
 
     return (
       <div className="carousel-container w-full mx-auto">
-        <div className=' flex justify-between items-center mb-8'>
-          <p className='w-full lg:text-[3.5rem] text-[2rem] font-extrabold leading-tight bg-gradient-to-r from-green-700 via-sky-600 to-green-900 bg-clip-text text-transparent'>
+        <div className=' flex justify-between items-center mb-3'>
+          <p className='w-full lg:text-[3.5rem] text-[2rem] font-extrabold leading-tight'>
             {title}
           </p>
           {/* Top Navigation buttons */}
@@ -93,6 +93,8 @@ export default function CarouselOne({ title, dbData }: { title: string, dbData: 
             </button>
           </div>
         </div>
+        <hr className="w-[12rem] border-b border-[0.4rem] border-amber-400" />
+        <div className="h-[2rem]" />
 
         <Swiper
           onSwiper={(swiper) => {
@@ -124,7 +126,7 @@ export default function CarouselOne({ title, dbData }: { title: string, dbData: 
                     alt="Background Image" />
                 </div>
 
-                <div className='absolute cursor-pointer duration-300 ease-in-out transition-all z-10 w-[100%] h-[100%] bg-gradient-to-t from-transparent to-transparent group-hover:bg-gradient-to-t group-hover:from-slate-900 hover:to-transparent'></div>
+                <div className='absolute cursor-pointer duration-300 ease-in-out transition-all z-10 w-[100%] h-[100%] bg-gradient-to-t from-transparent to-transparent group-hover:bg-gradient-to-t group-hover:from-black hover:to-transparent' />
                 <div className='w-[100%] h-[100%] z-20 absolute bottom-0 left-0'>
                   <div className='w-full h-full flex items-end justify-center duration-300 ease-in-out transition-all'>
                     <div className='opacity-0 py-8 px-6 translate-y-8 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 ease-in-out text-white'>

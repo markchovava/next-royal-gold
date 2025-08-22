@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { FaXTwitter, FaFacebookF, FaLinkedin, FaInstagram } from "react-icons/fa6";
 import Logo from './Logo';
 import { NavLinksData } from '../_data/NavLinksData';
+import { SocialLinksData } from '../_data/SocialLinksData';
 
 
 
@@ -17,7 +18,7 @@ const socialLinks = [
 export default function Footer() {
   return (
     <>
-    <footer className='w-full pt-[7rem] pb-[4rem] text-gray-200 bg-green-950'>
+    <footer className='w-full pt-[7rem] pb-[4rem] text-gray-200 bg-black'>
         <section className='mx-auto w-[92%] grid lg:grid-cols-3 grid-cols-1 gap-8 mb-12'>
             <div className=''>
                 <Logo color1='text-white' color2='text-amber-500' color3='text-green-700' />
@@ -46,8 +47,8 @@ export default function Footer() {
                     Keep up to date on social media or contact us with any other information
                 </p>
                 <div className='flex items-center gap-4'>
-                    {socialLinks.map((i) => (
-                        <Link href={i.href} key={i.name} className={`${i.color} hover:scale-110 transition-all ease-in-out duration-300`}>
+                    {SocialLinksData.map((i, key) => (
+                        <Link key={key} href={i.href} className={`${i.css} hover:scale-110 transition-all ease-in-out duration-300`}>
                             {i.icon}
                         </Link>
                     ))}
