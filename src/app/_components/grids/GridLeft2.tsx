@@ -3,10 +3,16 @@ import React from 'react'
 
 
 
-export default function GridLeft2({desc, img}: {desc: string, img: string}) {
+export default function GridLeft2(
+  {title, desc, img}: 
+  {title: string, desc: string, img: string}
+) {
   return (
     <section  className='w-full grid lg:grid-cols-2 h-[25rem] gap-8'>
         <div className='pl-[8%] flex flex-col items-start justify-center font-light text-gray-700 text-[1.5rem]'>
+            <h4 className='text-black text-[2rem] font-medium leading-tight mb-2'>
+              {title}
+            </h4>  
             <p>
                 {desc}
             </p>

@@ -1,12 +1,11 @@
-
 import React from 'react'
 
 
 
-export default function Grid5({dbData}: {dbData: any[]}) {
+export default function Grid4({dbData}: {dbData: any[]}) {
   return (
     <section className='w-full'>
-        <div className='w-[80%] mx-auto grid lg:grid-cols-5 md:grid-cols-3 grid-cols-1 gap-4'>
+        <div className='w-[80%] mx-auto grid lg:grid-cols-4 md:grid-cols-3 grid-cols-1 gap-4'>
             {dbData.map((i, key) => (
                 <div 
                     key={key} 

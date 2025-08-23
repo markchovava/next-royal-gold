@@ -11,6 +11,7 @@ import GridLeft2 from "./_components/grids/GridLeft2";
 import GridRight2 from "./_components/grids/GridRight2";
 import { ServicesData } from "./_data/ServicesData";
 import MainHeader from "./_components/MainHeader";
+import Grid4 from "./_components/grids/Grid4";
 
 
 
@@ -46,21 +47,21 @@ export default function Home() {
      </FadeSlideIn>
 
     <FadeSlideIn slideDirection="left" duration={1500}>
-      <GridLeft2 desc={WhyUsData.data[0].desc} img={WhyUsData.data[0].img} />
+      <GridLeft2 title={WhyUsData.data[0].title} desc={WhyUsData.data[0].desc} img={WhyUsData.data[0].img} />
     </FadeSlideIn>
     <div className="h-[6rem]" />
 
     <FadeSlideIn slideDirection="right" duration={1500}>
-        <GridRight2 desc={WhyUsData.data[1].desc} img={WhyUsData.data[1].img} />
+        <GridRight2 title={WhyUsData.data[1].title} desc={WhyUsData.data[1].desc} img={WhyUsData.data[1].img} />
     </FadeSlideIn>
 
     <div className="h-[6rem]" />
     <FadeSlideIn slideDirection="left" duration={1500}>
-        <GridLeft2 desc={WhyUsData.data[2].desc} img={WhyUsData.data[2].img} />
+        <GridLeft2 title={WhyUsData.data[2].title} desc={WhyUsData.data[2].desc} img={WhyUsData.data[2].img} />
     </FadeSlideIn>
 
 
-    <div className="h-[6rem]" />
+    <div className="h-[8rem]" />
     <FadeSlideIn slideDirection="up" duration={1500}>
         <div id={ServicesData.slug} className="mx-auto mb-[4rem] text-center flex items-center justify-center flex-col w-[65%]">
           <h3 className="text-[4rem] text-center font-extrabold ">
@@ -68,22 +69,23 @@ export default function Home() {
           </h3>
           <hr className="w-[12rem] border-b border-[0.4rem] border-amber-400" />
         </div>
-        <Grid5 dbData={ServicesData.data} />
-        <div className="h-[6rem]" />
+        <Grid4 dbData={ServicesData.data} />
+        
     </FadeSlideIn>
+    <div className="h-[8rem]" />
 
 
     
 
 
-     <FadeSlideIn slideDirection="up" duration={1500}>
+{/*      <FadeSlideIn slideDirection="up" duration={1500}>
       <section className="w-full">
         <div className="mx-auto w-[92%]">
           <CarouselOne title="The Benefits" dbData={ProjectData} />
         </div>
       </section>
       <div className="h-[6rem]" />
-     </FadeSlideIn>
+     </FadeSlideIn> */}
 
 
      <FadeSlideIn slideDirection="up" duration={1500}>

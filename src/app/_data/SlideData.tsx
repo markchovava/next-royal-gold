@@ -4,7 +4,7 @@ import { ButtonPrimary } from "../_components/buttons/Buttons";
 export const SlideData = [
   {
     id: 1,
-    img: '/assets/img/7by3/00.jpg',
+    img: '/assets/img/7by3/13.jpg',
     title: 'Welcome to Royal Gold Niger',
     description: "We are Niger's first gold refinery and gemstone processing facilities.",
     button: <ButtonPrimary
@@ -15,7 +15,7 @@ export const SlideData = [
   },
   {
     id: 2,
-    img: '/assets/img/7by3/13.jpg',
+    img: '/assets/img/7by3/00.jpg',
     title: 'What we do?',
     description: `Gold buying, refinery, value addition and a welcome center.`,
     button: <ButtonPrimary 
